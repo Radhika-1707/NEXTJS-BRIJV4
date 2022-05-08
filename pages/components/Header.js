@@ -33,18 +33,16 @@ import uniliver from '/public/images/uniliver.png';
 function Header() {
   return (
     <div className="BrijFinal_V4">
-      <div className="Rectangle2582">
-        
-      </div>
+      <div className="Rectangle2582"></div>
       <div className="Rectangle2581" />
       <div className="Rectangle2580" />
 
       <div className="Rectangle2576" />
       <div className="favicon1">
-        <Image src={Favicon1} />
+        <Image  src={Favicon1} alt='' />
       </div>
       <div className="List">
-        <Image src={List} />
+        <Image  src={List}  alt=''/>
       </div>
       {/* <Image className="digiaccel_logo" src={digiaccel_logo} /> */}
 
@@ -54,7 +52,7 @@ function Header() {
       {/* <div className="polygon13"/> */}
 
       <div className="Imageillustration">
-        <Image src={maincontainer2} />
+        <Image  src={maincontainer2} alt='' />
       </div>
       <span className="Writebettercopyinthisspaceatleasttwolinessothatuserunderstandswhatwehaveinoffer">
         Write better copy in this space at least two lines so that user
@@ -64,7 +62,7 @@ function Header() {
         Learn skills for digital careers
       </span>
       <div className="Frame36">
-        <Image src={Frame_36} />
+        <Image  src={Frame_36}  alt=''/>
       </div>
       <div className="Group42107">
         <div className="Rectangle11" />
@@ -74,18 +72,18 @@ function Header() {
       <span className="Title1">Recruitment Partners</span>
 
       <div className="Group42106">
-        <Image src={RecruitmentPartner} />
+        <Image  src={RecruitmentPartner} alt='' />
       </div>
 
       <div className="fluentlearningapp24filled">
-        <Image src={fluent_learning} />
+        <Image  src={fluent_learning}  alt=''/>
       </div>
       <span className="Title2">Work Based Curriculum</span>
       <span className="Title3">NOT Academic Course</span>
       <span className="Title4">Live Sessions</span>
       <span className="Title5">NOT Recorded Lectures</span>
       <div className="Group">
-        <Image src={GroupLivesessions} />
+        <Image  src={GroupLivesessions} alt='' />
       </div>
       <span className="Title8">Placement Process</span>
       <span className="Title9">NOT “Support”</span>
@@ -109,19 +107,18 @@ function Header() {
           bottom={56.57}
           background={"#4141F9"}
         /> */}
-        <Image  className="placement_process"  src={placement} />
+        <Image  className="placement_process" src={placement} alt='' />
       </div>
 
       <span className="Title6">Detailed Assessments</span>
       <span className="Title7">NOT Grades</span>
       <div className="Group42053">
-        <Image src={detailedassesment} />
+        <Image  src={detailedassesment}  alt=''/>
       </div>
       {/* <Image className="startup" src={StartupPNG} /> */}
-        <div className="airplane">
-      <Image className="startup" src={StartupPNG} />
-
-        </div>
+      <div className="airplane">
+        <Image  className="startup" src={StartupPNG}  alt=''/>
+      </div>
       <span className="WhoallcanUpskill">Who all can #Upskill ?</span>
       <span className="Whyus">Why us?</span>
 
@@ -139,7 +136,7 @@ function Header() {
       </div> */}
 
       <div className="raisinghandpana">
-        <Image src={raisingpana} />
+        <Image  src={raisingpana}  alt='' />
       </div>
 
       <span className="Title10">Learn from the best in the industry</span>
@@ -149,7 +146,7 @@ function Header() {
         track ...Learn more
       </span>
       <div className="workingrafiki">
-        <Image src={working_rafiki} />
+        <Image  src={working_rafiki}  alt=''/>
       </div>
       <span className="DigitalMarketingProfessionals">
         Digital Marketing Professionals
@@ -159,7 +156,7 @@ function Header() {
         track ...Learn more
       </span>
       <div className="mobilemarketingrafiki">
-        <Image src={marketing_rafiki} />
+        <Image  src={marketing_rafiki}  alt=''/>
       </div>
       {/* LINE 46 */}
       <div className="line46" />
@@ -167,14 +164,13 @@ function Header() {
 
       {/********************  K A R A N **********************   */}
 
-      <div className="Rectangle44" >
-        
-      <div className="logoslinkedinicon(1)">
-        {/* <Image  className="IN" src={logoLinkedin} /> */}
-      </div>
+      <div className="Rectangle44">
+        <div className="logoslinkedinicon(1)">
+          {/* <Image  className="IN" src={logoLinkedin} /> */}
+        </div>
       </div>
       <div className="Rectangle27">
-        <Image src={Karan} />
+        <Image  src={Karan}  alt=''/>
       </div>
       <div className="line15" />
       <div className="line16" />
@@ -199,10 +195,10 @@ function Header() {
 
       {/********************  A A L E K H  **********************   */}
 
-      <div className="Rectangle45Aalekh" >
-      <div className="logoslinkedinicon(2)">
-        {/* <Image src={logoLinkedin} /> */}
-      </div>
+      <div className="Rectangle45Aalekh">
+        <div className="logoslinkedinicon(2)">
+          {/* <Image src={logoLinkedin} /> */}
+        </div>
       </div>
 
       <div className="Group42033(2)">
@@ -212,7 +208,7 @@ function Header() {
         {/* <Image className="uniliver_Karan" src={uniliver} /> */}
       </div>
       <div className="Rectangle27Aalekh">
-        <Image src={AalekTripathi} />
+        <Image  src={AalekTripathi} alt='' />
       </div>
       <div className="line15(Aalekh)" />
       <div className="line16(Aalekh) " />
@@ -227,10 +223,10 @@ function Header() {
 
       {/********************  B H A U M I K  **********************   */}
 
-      <div className="Rectangle45Bhaumik" >
-      <div className="logoslinkedinicon(3)">
-        {/* <Image src={logoLinkedin} /> */}
-      </div>
+      <div className="Rectangle45Bhaumik">
+        <div className="logoslinkedinicon(3)">
+          {/* <Image src={logoLinkedin} /> */}
+        </div>
       </div>
       <div className="Group42033(3)">
         <span className="BhaumikVyas">Bhaumik Vyas</span>
@@ -243,7 +239,7 @@ function Header() {
         Cr+
       </span>
       <div className="Rectangle27Bhaumik">
-        <Image src={Bhaumik} />
+        <Image  src={Bhaumik}  alt=''/>
       </div>
 
       <style jsx>
@@ -755,9 +751,9 @@ function Header() {
           }
           .employment1 {
             position: absolute;
-            left: 15.20%;
+            left: 15.2%;
             right: 72.34%;
-            top: 42.20%;
+            top: 42.2%;
             bottom: 35.43%;
           }
           .placementsuitcase {
@@ -868,7 +864,7 @@ function Header() {
             position: absolute;
             left: 32.38%;
             right: 35.46%;
-            top: 51.80%;
+            top: 51.8%;
             bottom: 47.24%;
 
             font-family: "Lato";
@@ -1219,7 +1215,7 @@ function Header() {
             top: 0%;
             bottom: 0%;
             justify-content: flex-end;
-            background: #0A66C2;
+            background: #0a66c2;
             border-radius: 9px;
           }
           .Rectangle45Aalekh {
@@ -1493,68 +1489,58 @@ function Header() {
             left: 15px;
             top: 28px;
             cursor: pointer;
-          
           }
           .GEARS {
             display: flex;
             justify-content: space-between;
             top: 1160px;
           }
-          .logoslinkedinicon(2){
+          .logoslinkedinicon(2) {
             position: absolute;
             left: 0%;
             right: 0%;
             top: 11.06%;
             bottom: -11.06%;
             justify-content: flex-end;
-            
-            background: #0A66C2;
+
+            background: #0a66c2;
             border-radius: 9px;
           }
-          .logoslinkedinicon(3){
+          .logoslinkedinicon(3) {
             position: absolute;
             left: 0%;
             right: 0%;
             top: 11.06%;
             bottom: -11.06%;
             cursor: pointer;
-            background: #0A66C2;
+            background: #0a66c2;
             border-radius: 9px;
             justify-content: flex-end;
-
           }
-          .uniliver_Karan{
+          .uniliver_Karan {
             position: absolute;
             width: 17.78px;
             height: 18.09px;
             left: 272px;
             top: 100px;
-
           }
-          .placement_process{
-            left:5px;
-            
+          .placement_process {
+            left: 5px;
           }
-          .startup{
+          .startup {
             position: absolute;
             width: 206px;
             height: 143px;
             left: 91px;
             top: 1385px;
-
-            
           }
-          .airplane{
+          .airplane {
             position: absolute;
             width: 206px;
             height: 143px;
             left: 91px;
             top: 1387px;
-
-            
           }
-          
-        
         `}
       </style>
     </div>
