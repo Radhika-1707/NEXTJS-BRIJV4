@@ -17,7 +17,7 @@ import placement from "/public/images/placement.png";
 import placementsuitcase from "/public/images/placementsuitcase.png";
 import placementhand from "/public/images/placementhand.png";
 import detailedassesment from "/public/images/detailedassesment.png";
-import startup_svg from "/public/images/startup_svg.svg";
+import StartupPNG from "/public/images/StartupPNG.png";
 import plus_icon from "/public/images/plus_icon.svg";
 import raisingpana from "/public/images/raisingpana.svg";
 import working_rafiki from "/public/images/working_rafiki.svg";
@@ -117,9 +117,9 @@ function Header() {
       <div className="Group42053">
         <Image src={detailedassesment} />
       </div>
-      {/* <Image className="startup" src={startup_svg} /> */}
+      {/* <Image className="startup" src={StartupPNG} /> */}
         <div className="airplane">
-      <Image className="startup" src={startup_svg} />
+      <Image className="startup" src={StartupPNG} />
 
         </div>
       <span className="WhoallcanUpskill">Who all can #Upskill ?</span>
@@ -1493,7 +1493,7 @@ function Header() {
             left: 15px;
             top: 28px;
             cursor: pointer;
-            background: url(Favicon1.svg);
+          
           }
           .GEARS {
             display: flex;
@@ -1530,7 +1530,6 @@ function Header() {
             left: 272px;
             top: 100px;
 
-            background: url(uniliver.png);
           }
           .placement_process{
             left:5px;
@@ -1543,7 +1542,7 @@ function Header() {
             left: 91px;
             top: 1385px;
 
-            background: url(startup_svg.svg);
+            
           }
           .airplane{
             position: absolute;
@@ -1552,7 +1551,7 @@ function Header() {
             left: 91px;
             top: 1387px;
 
-            background: url(startup_svg.svg);
+            
           }
           
         
