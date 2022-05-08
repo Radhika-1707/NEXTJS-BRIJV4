@@ -12,7 +12,7 @@ import data_jsonLeft from "/public/images/data_jsonLeft.svg";
 import data_jsonRight from "/public/images/data_jsonRight.svg";
 import RecruitmentPartner from "/public/images/RecruitmentPartner.png";
 import fluent_learning from "/public/images/fluent_learning.svg";
-import GroupLivesessions from "/public/images/GroupLivesessions.svg";
+import livesessions from "/public/images/livesessions.png";
 import placement from "/public/images/placement.png";
 import placementsuitcase from "/public/images/placementsuitcase.png";
 import placementhand from "/public/images/placementhand.png";
@@ -83,7 +83,7 @@ function Header() {
       <span className="Title4">Live Sessions</span>
       <span className="Title5">NOT Recorded Lectures</span>
       <div className="Group">
-        <Image  src={GroupLivesessions} alt='' />
+        <Image  src={livesessions} alt='' />
       </div>
       <span className="Title8">Placement Process</span>
       <span className="Title9">NOT “Support”</span>
@@ -240,6 +240,7 @@ function Header() {
       </span>
       <div className="Rectangle27Bhaumik">
         <Image  src={Bhaumik}  alt=''/>
+        
       </div>
 
       <style jsx>
