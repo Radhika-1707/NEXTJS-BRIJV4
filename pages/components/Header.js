@@ -27,32 +27,34 @@ import AalekTripathi from "/public/images/AalekTripathi.svg";
 import Bhaumik from "/public/images/Bhaumik.svg";
 import maincontainer2 from "/public/images/maincontainer2.png";
 import Favicon1 from "/public/images/Favicon1.svg";
-import logoLinkedin from '/public/images/logoLinkedin.png';
-import uniliver from '/public/images/uniliver.png';
+import logoLinkedin from "/public/images/logoLinkedin.png";
+import uniliver from "/public/images/uniliver.png";
+import ReactPlayer from "react-player";
+import wheelGIF from "/public/images/wheelGIF.gif";
+import LINKEDIN from "/public/images/LINKEDIN.png";
+import Link from "next/link";
 
 function Header() {
   return (
     <div className="BrijFinal_V4">
       <div className="Rectangle2582"></div>
-      <div className="Rectangle2581" />
+      <div className="Rectangle2581"></div>
       <div className="Rectangle2580" />
 
       <div className="Rectangle2576" />
       <div className="favicon1">
-        <Image  src={Favicon1} alt='' />
+        <Image src={Favicon1} alt="" />
       </div>
       <div className="List">
-        <Image  src={List}  alt=''/>
+        <Image src={List} alt="" />
       </div>
-      {/* <Image className="digiaccel_logo" src={digiaccel_logo} /> */}
-
-      {/* <Image  className='polygon12' src={Polygon12} />
-      <Image  className='polygon13' src={Polygon13}/> */}
-      {/* <div className="polygon12"/> */}
-      {/* <div className="polygon13"/> */}
+      {/* <div className="WHEELS">
+        <Image className="WHEELSleft" src={wheelGIF} />
+        <Image className="WHEELSRight" src={wheelGIF} />
+      </div> */}
 
       <div className="Imageillustration">
-        <Image  src={maincontainer2} alt='' />
+        <Image src={maincontainer2} alt="" />
       </div>
       <span className="Writebettercopyinthisspaceatleasttwolinessothatuserunderstandswhatwehaveinoffer">
         Write better copy in this space at least two lines so that user
@@ -62,8 +64,9 @@ function Header() {
         Learn skills for digital careers
       </span>
       <div className="Frame36">
-        <Image  src={Frame_36}  alt=''/>
+        <Image src={Frame_36} alt="" />
       </div>
+
       <div className="Group42107">
         <div className="Rectangle11" />
         <span className="Title20"> Upskill Now</span>
@@ -72,53 +75,43 @@ function Header() {
       <span className="Title1">Recruitment Partners</span>
 
       <div className="Group42106">
-        <Image  src={RecruitmentPartner} alt='' />
+        <Image src={RecruitmentPartner} alt="" />
       </div>
+      <div className="WHEELS1">
+        <Image className="WHEELSleft" src={wheelGIF} />
+      </div>
+      <div className="WHEELS2">
+        <Image className="WHEELSleft" src={wheelGIF} />
+      </div>
+      {/* <Image className="WHEELSRight" src={wheelGIF} /> */}
 
       <div className="fluentlearningapp24filled">
-        <Image  src={fluent_learning}  alt=''/>
+        <Image src={fluent_learning} alt="" />
       </div>
       <span className="Title2">Work Based Curriculum</span>
       <span className="Title3">NOT Academic Course</span>
       <span className="Title4">Live Sessions</span>
       <span className="Title5">NOT Recorded Lectures</span>
       <div className="Group">
-        <Image  src={livesessions} alt='' />
+        <Image src={livesessions} alt="" />
       </div>
       <span className="Title8">Placement Process</span>
       <span className="Title9">NOT “Support”</span>
       <div className="employment1">
         {/* image employment */}
-        {/* <Image
-          src={placementsuitcase}
-          position={"absolute"}
-          left={15.14}
-          right={81.17}
-          top={42.67}
-          bottom={56.95}
-          background={"#FF991F"}
-        />
-        <Image
-          src={placementhand}
-          position={"absolute"}
-          left={11.75}
-          right={80.42}
-          top={30}
-          bottom={56.57}
-          background={"#4141F9"}
-        /> */}
-        <Image  className="placement_process" src={placement} alt='' />
+
+        <Image className="placement_process" src={placement} alt="" />
       </div>
 
       <span className="Title6">Detailed Assessments</span>
       <span className="Title7">NOT Grades</span>
       <div className="Group42053">
-        <Image  src={detailedassesment}  alt=''/>
+        <Image src={detailedassesment} alt="" />
       </div>
-      {/* <Image className="startup" src={StartupPNG} /> */}
       <div className="airplane">
-        <Image  className="startup" src={StartupPNG}  alt=''/>
+        <Image className="startup" src={StartupPNG} alt="" />
       </div>
+
       <span className="WhoallcanUpskill">Who all can #Upskill ?</span>
       <span className="Whyus">Why us?</span>
 
@@ -136,7 +129,7 @@ function Header() {
       </div> */}
 
       <div className="raisinghandpana">
-        <Image  src={raisingpana}  alt='' />
+        <Image src={raisingpana} alt="" />
       </div>
 
       <span className="Title10">Learn from the best in the industry</span>
@@ -146,7 +139,7 @@ function Header() {
         track ...Learn more
       </span>
       <div className="workingrafiki">
-        <Image  src={working_rafiki}  alt=''/>
+        <Image src={working_rafiki} alt="" />
       </div>
       <span className="DigitalMarketingProfessionals">
         Digital Marketing Professionals
@@ -156,7 +149,7 @@ function Header() {
         track ...Learn more
       </span>
       <div className="mobilemarketingrafiki">
-        <Image  src={marketing_rafiki}  alt=''/>
+        <Image src={marketing_rafiki} alt="" />
       </div>
       {/* LINE 46 */}
       <div className="line46" />
@@ -165,12 +158,16 @@ function Header() {
       {/********************  K A R A N **********************   */}
 
       <div className="Rectangle44">
-        <div className="logoslinkedinicon(1)">
-          {/* <Image  className="IN" src={logoLinkedin} /> */}
-        </div>
+        <Link href="https://www.linkedin.com/in/karanbhagi/">
+          <a target="_blank">
+            <div className="logoslinkedinicon1">
+              <Image className="logoslinkediniconn" src={LINKEDIN} />
+            </div>
+          </a>
+        </Link>
       </div>
       <div className="Rectangle27">
-        <Image  src={Karan}  alt=''/>
+        <Image src={Karan} alt="" />
       </div>
       <div className="line15" />
       <div className="line16" />
@@ -196,9 +193,13 @@ function Header() {
       {/********************  A A L E K H  **********************   */}
 
       <div className="Rectangle45Aalekh">
-        <div className="logoslinkedinicon(2)">
-          {/* <Image src={logoLinkedin} /> */}
-        </div>
+        <Link href="https://www.linkedin.com/in/aalekht/">
+          <a target="_blank">
+            <div className="logoslinkedinicon2">
+              <Image className="logoslinkediniconn2" src={LINKEDIN} />
+            </div>
+          </a>
+        </Link>
       </div>
 
       <div className="Group42033(2)">
@@ -208,7 +209,7 @@ function Header() {
         {/* <Image className="uniliver_Karan" src={uniliver} /> */}
       </div>
       <div className="Rectangle27Aalekh">
-        <Image  src={AalekTripathi} alt='' />
+        <Image src={AalekTripathi} alt="" />
       </div>
       <div className="line15(Aalekh)" />
       <div className="line16(Aalekh) " />
@@ -224,9 +225,16 @@ function Header() {
       {/********************  B H A U M I K  **********************   */}
 
       <div className="Rectangle45Bhaumik">
-        <div className="logoslinkedinicon(3)">
-          {/* <Image src={logoLinkedin} /> */}
-        </div>
+        <Link href="https://www.linkedin.com/in/bhaumik-vyas-240b9770/">
+          <a target="_blank">
+            <div className="logoslinkedinicon3">
+              <Image className="logoslinkediniconn3" src={LINKEDIN} alt="" />
+            </div>
+          </a>
+        </Link>
+        {/* <div className="logoslinkedinicon3">
+          <Image className="logoslinkediniconn3" src={LINKEDIN} />
+        </div> */}
       </div>
       <div className="Group42033(3)">
         <span className="BhaumikVyas">Bhaumik Vyas</span>
@@ -239,8 +247,7 @@ function Header() {
         Cr+
       </span>
       <div className="Rectangle27Bhaumik">
-        <Image  src={Bhaumik}  alt=''/>
-        
+        <Image src={Bhaumik} alt="" />
       </div>
 
       <style jsx>
@@ -258,7 +265,7 @@ function Header() {
             width: 362px;
             height: 275px;
             left: 11px;
-            top: 1148px;
+            top: 1165px;
 
             background: #ffffff;
             border-radius: 40px;
@@ -594,26 +601,7 @@ function Header() {
             left: 43px;
             top: 902px;
           }
-          .data_jsonLeft {
-            position: absolute;
-            width: 131px;
-            height: 86px;
-            left: 83px;
-            top: 1053px;
 
-            background: url(.png);
-            border-radius: 47px;
-            transform: matrix(-1, 0, 0, 1, 0, 0);
-          }
-          .data_jsonRight {
-            position: absolute;
-            width: 131px;
-            height: 86px;
-            left: 301px;
-            top: 1051px;
-
-            border-radius: 47px;
-          }
           .fluentlearningapp24filled {
             position: absolute;
             left: 10.97%;
@@ -859,7 +847,7 @@ function Header() {
             display: flex;
             align-items: center;
 
-            color: #ffffff;
+            color: #000000;
           }
           .CollegeFreshers {
             position: absolute;
@@ -1070,7 +1058,6 @@ function Header() {
             height: 104px;
             left: 17px;
             top: 2123px;
-
             background: #ffffff;
             box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
             border-radius: 9px;
@@ -1209,16 +1196,7 @@ function Header() {
 
             color: #000000;
           }
-          .logoslinkedinicon(1) {
-            position: absolute;
-            left: 0%;
-            right: 0%;
-            top: 0%;
-            bottom: 0%;
-            justify-content: flex-end;
-            background: #0a66c2;
-            border-radius: 9px;
-          }
+
           .Rectangle45Aalekh {
             position: absolute;
             width: 346px;
@@ -1496,28 +1474,7 @@ function Header() {
             justify-content: space-between;
             top: 1160px;
           }
-          .logoslinkedinicon(2) {
-            position: absolute;
-            left: 0%;
-            right: 0%;
-            top: 11.06%;
-            bottom: -11.06%;
-            justify-content: flex-end;
 
-            background: #0a66c2;
-            border-radius: 9px;
-          }
-          .logoslinkedinicon(3) {
-            position: absolute;
-            left: 0%;
-            right: 0%;
-            top: 11.06%;
-            bottom: -11.06%;
-            cursor: pointer;
-            background: #0a66c2;
-            border-radius: 9px;
-            justify-content: flex-end;
-          }
           .uniliver_Karan {
             position: absolute;
             width: 17.78px;
@@ -1541,6 +1498,60 @@ function Header() {
             height: 143px;
             left: 91px;
             top: 1387px;
+          }
+          .WHEELS {
+            width: 131px;
+            left: 301px;
+            top: 1051px;
+            border-radius: 47px;
+            display: flex;
+          }
+          .WHEELS1 {
+            height: 86px;
+            width: 131px;
+            left: 83px;
+            top: 1053px;
+            border-radius: 47px;
+            transform: matrix(1, 0, 0, 1, 0, 1053);
+          }
+          .WHEELS2 {
+            position: absolute;
+            width: 131px;
+            height: 86px;
+            left: 301px;
+            top: 1051px;
+            border-radius: 125px 125px 0px 0px;
+          }
+
+          .logoslinkediniconn {
+            position: absolute;
+            background: #0a66c2;
+            border-radius: 9px;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+
+            background: #0a66c2;
+            border-radius: 9px;
+          }
+          .logoslinkedinicon1 {
+            cursor: pointer;
+            justify-content: flex-end;
+          }
+          .logoslinkedinicon2 {
+            height: 18.086963653564453px;
+            width: 16px;
+            left: 0px;
+            top: 1.9998779296875px;
+            border-radius: 9px;
+            cursor: pointer;
+            justify-content: flex-end;
+          }
+
+          .logoslinkedinicon3 {
+            cursor: pointer;
+            justify-content: flex-end;
           }
         `}
       </style>
