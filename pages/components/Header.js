@@ -1,15 +1,8 @@
 import List from "/public/images/List.svg";
 import Image from "next/image";
-import digiaccel_logo from "/public/images/digiaccel_logo.svg";
-import Polygon12 from "/public/images/Polygon12 .svg";
-import Polygon13 from "/public/images/Polygon13 .svg";
+
 import image_illustrations from "/public/images/image_illustrations.svg";
-import e_commerce from "/public/images/e_commerce.svg";
-import digital_marketing from "/public/images/digital_marketing.svg";
-import supply_chain from "/public/images/supply_chain.svg";
 import Frame_36 from "/public/images/Frame_36.svg";
-import data_jsonLeft from "/public/images/data_jsonLeft.svg";
-import data_jsonRight from "/public/images/data_jsonRight.svg";
 import RecruitmentPartner from "/public/images/RecruitmentPartner.png";
 import fluent_learning from "/public/images/fluent_learning.svg";
 import livesessions from "/public/images/livesessions.png";
@@ -29,7 +22,6 @@ import maincontainer2 from "/public/images/maincontainer2.png";
 import Favicon1 from "/public/images/Favicon1.svg";
 import logoLinkedin from "/public/images/logoLinkedin.png";
 import UNILIVERsmall from "/public/images/UNILIVERsmall.png";
-import ReactPlayer from "react-player";
 import wheelGIF from "/public/images/wheelGIF.gif";
 import LINKEDIN from "/public/images/LINKEDIN.png";
 import Link from "next/link";
@@ -48,10 +40,6 @@ function Header() {
       <div className="List">
         <Image src={List} alt="" />
       </div>
-      {/* <div className="WHEELS">
-        <Image className="WHEELSleft" src={wheelGIF} />
-        <Image className="WHEELSRight" src={wheelGIF} />
-      </div> */}
 
       <div className="Imageillustration">
         <Image src={maincontainer2} alt="" />
@@ -101,7 +89,6 @@ function Header() {
       <span className="Title9">NOT “Support”</span>
       <div className="employment1">
         {/* image employment */}
-
         <Image className="placement_process" src={placement} alt="" />
       </div>
 
@@ -223,7 +210,6 @@ function Header() {
       </span>
 
       {/********************  B H A U M I K  **********************   */}
-
       <div className="Rectangle45Bhaumik">
         <Link href="https://www.linkedin.com/in/bhaumik-vyas-240b9770/">
           <a target="_blank">
@@ -254,8 +240,8 @@ function Header() {
             position: relative;
             width: 383px;
             height: 3042px;
-            
-            background: #4141F9;
+
+            background: #4141f9;
           }
           .Rectangle2582 {
             position: absolute;
@@ -264,7 +250,7 @@ function Header() {
             left: 11px;
             top: 1148px;
 
-            background: #FFFFFF;
+            background: #ffffff;
             border-radius: 40px;
           }
           .Rectangle2581 {
@@ -283,7 +269,7 @@ function Header() {
             left: 0px;
             top: 838px;
 
-            background: #F6F9FF;
+            background: #f6f9ff;
           }
           .Rectangle2576 {
             position: absolute;
@@ -737,10 +723,10 @@ function Header() {
           }
           .employment1 {
             position: absolute;
-            left: 15.2%;
-            right: 72.34%;
-            top: 42.2%;
-            bottom: 35.43%;
+            left: 11.1%;
+            right: 80.19%;
+            top: 42.67%;
+            bottom: 58.44%;
           }
           .placementsuitcase {
             position: absolute;
@@ -748,7 +734,7 @@ function Header() {
             right: 81.17%;
             top: 42.67%;
             bottom: 56.95%;
-            overflow:hidden;
+            overflow: hidden;
             background: #ff991f;
           }
           .placementhand {
@@ -757,7 +743,7 @@ function Header() {
             right: 80.42%;
             top: 43%;
             bottom: 56.57%;
-            overflow:hidden;
+            overflow: hidden;
             background: #4141f9;
           }
           .Title6 {
@@ -1468,7 +1454,7 @@ function Header() {
           }
 
           .placement_process {
-            left: 5px;
+            left: 10px;
           }
           .startup {
             position: absolute;
@@ -1484,34 +1470,38 @@ function Header() {
             left: 91px;
             top: 1387px;
           }
-          .WHEELS {
-            width: 131px;
-            left: 301px;
-            top: 1051px;
-            border-radius: 47px;
-            display: flex;
+          .WHEELS{
+            display:flex;
           }
+
           .WHEELS1 {
-            height: 86px;
+            position: absolute;
             width: 120px;
-            left: 83px;
-            top: 1053px;
-            display: block;
-            border-radius: 47px;
+            height: 83px;
+            left: 0px;
+            top: 1052px;
             overflow: hidden;
-            transform: matrix(1, 0, 0, 1, 1, 1053);
+            border-radius:47px;
+            border-radius: 5rem 5rem 1 0;
+            border-radius: 0 -100% -100% 0/0 50% 50%
+
+            
+
           }
 
           .WHEELS2 {
             position: absolute;
             width: 120px;
-            height: 86px;
-            left: 263px;
-            display: block;
+            height: 83px;
+            left: 294px;
             top: 1051px;
             overflow: hidden;
-            border-radius: 47px;
+            border-radius:47px;
+            border-radius: 5rem 5rem 1 0;
+            border-radius: 0 -100% -100% 0/0 50% 50%
+
           }
+         
 
           .logoslinkedinicon1 {
             cursor: pointer;
