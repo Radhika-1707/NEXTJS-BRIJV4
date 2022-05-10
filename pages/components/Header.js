@@ -249,21 +249,22 @@ function Header() {
       <style jsx>
         {`
           .BrijFinal_V4 {
+            box-sizing: border-box;
+
             position: relative;
-            width: 379px;
-            height: 3040px;
-            background-color: #4141f9;
-            border-color: #000000;
-            border-width: 1px;
+            width: 383px;
+            height: 3042px;
+            
+            background: #4141F9;
           }
           .Rectangle2582 {
             position: absolute;
             width: 362px;
             height: 275px;
             left: 11px;
-            top: 1165px;
+            top: 1148px;
 
-            background: #ffffff;
+            background: #FFFFFF;
             border-radius: 40px;
           }
           .Rectangle2581 {
@@ -282,7 +283,7 @@ function Header() {
             left: 0px;
             top: 838px;
 
-            background: #f6f9ff;
+            background: #F6F9FF;
           }
           .Rectangle2576 {
             position: absolute;
@@ -747,7 +748,7 @@ function Header() {
             right: 81.17%;
             top: 42.67%;
             bottom: 56.95%;
-
+            overflow:hidden;
             background: #ff991f;
           }
           .placementhand {
@@ -756,7 +757,7 @@ function Header() {
             right: 80.42%;
             top: 43%;
             bottom: 56.57%;
-
+            overflow:hidden;
             background: #4141f9;
           }
           .Title6 {
