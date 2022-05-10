@@ -28,7 +28,7 @@ import Bhaumik from "/public/images/Bhaumik.svg";
 import maincontainer2 from "/public/images/maincontainer2.png";
 import Favicon1 from "/public/images/Favicon1.svg";
 import logoLinkedin from "/public/images/logoLinkedin.png";
-import uniliver from "/public/images/uniliver.png";
+import UNILIVERsmall from "/public/images/UNILIVERsmall.png";
 import ReactPlayer from "react-player";
 import wheelGIF from "/public/images/wheelGIF.gif";
 import LINKEDIN from "/public/images/LINKEDIN.png";
@@ -77,11 +77,13 @@ function Header() {
       <div className="Group42106">
         <Image src={RecruitmentPartner} alt="" />
       </div>
-      <div className="WHEELS1">
-        <Image className="WHEELSleft" src={wheelGIF} />
-      </div>
-      <div className="WHEELS2">
-        <Image className="WHEELSleft" src={wheelGIF} />
+      <div className="WHEELS">
+        <div className="WHEELS1">
+          <Image className="WHEELSleft" src={wheelGIF} />
+        </div>
+        <div className="WHEELS2">
+          <Image className="WHEELSRight" src={wheelGIF} />
+        </div>
       </div>
       {/* <Image className="WHEELSRight" src={wheelGIF} /> */}
 
@@ -173,10 +175,12 @@ function Header() {
       <div className="line16" />
 
       <div className="Group42033(1)">
+        {/* <Image className="uniliver_Karan" src={UNILIVERsmall} alt="" /> */}
+
         <span className="KaranBhagi">Karan Bhagi</span>
         <span className="Title12">14 yrs</span>
         <span className="Title11">Ex</span>
-        {/* <Image className="uniliver_Karan" src={uniliver} /> */}
+        {/* <Image src={UNILIVERsmall} /> */}
       </div>
       <span className="DigitalbrandleaderwhohelpedscaleHULseCommercebusinessto3000Cr1">
         Digital brand leader who helped scale HUL’s eCommerce business to 3000
@@ -186,9 +190,6 @@ function Header() {
         Led Surf excel in India as a Marketing Director to market leadership in
         laundry category
       </span>
-      {/* <div className="logoslinkedinicon(1)">
-        <Image src={logoLinkedin} />
-      </div> */}
 
       {/********************  A A L E K H  **********************   */}
 
@@ -206,7 +207,6 @@ function Header() {
         <span className="AalekhTripathi">Aalekh Tripathi</span>
         <span className="Title13">7 yrs</span>
         <span className="Title14">Ex</span>
-        {/* <Image className="uniliver_Karan" src={uniliver} /> */}
       </div>
       <div className="Rectangle27Aalekh">
         <Image src={AalekTripathi} alt="" />
@@ -232,15 +232,11 @@ function Header() {
             </div>
           </a>
         </Link>
-        {/* <div className="logoslinkedinicon3">
-          <Image className="logoslinkediniconn3" src={LINKEDIN} />
-        </div> */}
       </div>
       <div className="Group42033(3)">
         <span className="BhaumikVyas">Bhaumik Vyas</span>
         <span className="Title15">8 yrs</span>
         <span className="Title16">Ex</span>
-        {/* <Image className="uniliver_Karan" src={uniliver} /> */}
       </div>
       <span className="DigitalbrandleaderwhohelpedscaleHULseCommercebusinessto3000Cr3">
         Digital brand leader who helped scale HUL’s eCommerce business to 3000
@@ -254,8 +250,8 @@ function Header() {
         {`
           .BrijFinal_V4 {
             position: relative;
-            width: 383px;
-            height: 3042px;
+            width: 379px;
+            height: 3040px;
             background-color: #4141f9;
             border-color: #000000;
             border-width: 1px;
@@ -832,7 +828,7 @@ function Header() {
           }
           .Whyus {
             position: absolute;
-            width: 157px;
+            width: 160px;
             height: 54px;
             left: 135px;
             top: 1067px;
@@ -847,7 +843,7 @@ function Header() {
             display: flex;
             align-items: center;
 
-            color: #000000;
+            color: #ffffff;
           }
           .CollegeFreshers {
             position: absolute;
@@ -1469,19 +1465,7 @@ function Header() {
             top: 28px;
             cursor: pointer;
           }
-          .GEARS {
-            display: flex;
-            justify-content: space-between;
-            top: 1160px;
-          }
 
-          .uniliver_Karan {
-            position: absolute;
-            width: 17.78px;
-            height: 18.09px;
-            left: 272px;
-            top: 100px;
-          }
           .placement_process {
             left: 5px;
           }
@@ -1508,50 +1492,64 @@ function Header() {
           }
           .WHEELS1 {
             height: 86px;
-            width: 131px;
+            width: 120px;
             left: 83px;
             top: 1053px;
+            display: block;
             border-radius: 47px;
-            transform: matrix(1, 0, 0, 1, 0, 1053);
+            overflow: hidden;
+            transform: matrix(1, 0, 0, 1, 1, 1053);
           }
+
           .WHEELS2 {
             position: absolute;
-            width: 131px;
+            width: 120px;
             height: 86px;
-            left: 301px;
+            left: 263px;
+            display: block;
             top: 1051px;
-            border-radius: 125px 125px 0px 0px;
+            overflow: hidden;
+            border-radius: 47px;
           }
 
-          .logoslinkediniconn {
-            position: absolute;
-            background: #0a66c2;
-            border-radius: 9px;
-            left: 0%;
-            right: 0%;
-            top: 0%;
-            bottom: 0%;
-
-            background: #0a66c2;
-            border-radius: 9px;
-          }
           .logoslinkedinicon1 {
             cursor: pointer;
             justify-content: flex-end;
-          }
-          .logoslinkedinicon2 {
-            height: 18.086963653564453px;
-            width: 16px;
-            left: 0px;
-            top: 1.9998779296875px;
-            border-radius: 9px;
-            cursor: pointer;
-            justify-content: flex-end;
+            display: flex;
           }
 
           .logoslinkedinicon3 {
             cursor: pointer;
             justify-content: flex-end;
+            display: flex;
+          }
+          .logoslinkedinicon2 {
+            cursor: pointer;
+            justify-content: flex-end;
+            display: flex;
+          }
+
+          .Group42033(1) {
+            position: absolute;
+            width: 103.78px;
+            height: 21px;
+            left: 186px;
+            top: 2135px;
+          }
+
+          .Group42033(2) {
+            position: absolute;
+            width: 182px;
+            height: 36px;
+            left: 178px;
+            top: 2245px;
+          }
+          .Group42033(3) {
+            position: absolute;
+            width: 97.78px;
+            height: 21px;
+            left: 192px;
+            top: 2394px;
           }
         `}
       </style>
