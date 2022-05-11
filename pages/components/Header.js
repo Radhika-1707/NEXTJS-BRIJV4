@@ -1,6 +1,6 @@
 import List from "/public/images/List.svg";
 import Image from "next/image";
-
+import whatsapp from "/public/images/whatsapp.svg";
 import image_illustrations from "/public/images/image_illustrations.svg";
 import Frame_36 from "/public/images/Frame_36.svg";
 import RecruitmentPartner from "/public/images/RecruitmentPartner.png";
@@ -25,6 +25,7 @@ import UNILIVERsmall from "/public/images/UNILIVERsmall.png";
 import wheelGIF from "/public/images/wheelGIF.gif";
 import LINKEDIN from "/public/images/LINKEDIN.png";
 import Link from "next/link";
+import DIGILOGO_Screen from "./DIGILOGO_Screen";
 
 function Header() {
   return (
@@ -34,11 +35,19 @@ function Header() {
       <div className="Rectangle2580" />
 
       <div className="Rectangle2576" />
-      <div className="favicon1">
-        <Image src={Favicon1} alt="" />
-      </div>
+      <Link href="./components/DIGILOGO_Screen">
+        <a target="_blank">
+          <div className="favicon1">
+            <Image src={Favicon1} alt="" />
+          </div>
+        </a>
+      </Link>
       <div className="List">
-        <Image src={List} alt="" />
+        <Link href="./components/LISTLOGO_Screen">
+          <a target="_blank">
+            <Image src={List} alt="" />
+          </a>
+        </Link>
       </div>
 
       <div className="Imageillustration">
@@ -57,7 +66,12 @@ function Header() {
 
       <div className="Group42107">
         <div className="Rectangle11" />
-        <span className="Title20"> Upskill Now</span>
+        <Link href="./components/UPSKILLLOGO_Screen">
+          <a target="_blank">
+            <span className="Title20"> Upskill Now</span>
+          </a>
+        </Link>
+        {/* <span className="Title20"> Upskill Now</span> */}
       </div>
 
       <span className="Title1">Recruitment Partners</span>
@@ -231,6 +245,14 @@ function Header() {
       <div className="Rectangle27Bhaumik">
         <Image src={Bhaumik} alt="" />
       </div>
+
+      <Link href="https://wa.me/7838212351?text=Welcome to Digiaccel">
+        <a target="_blank">
+          <div className="whatsapp_float">
+            <Image src={whatsapp} />
+          </div>
+        </a>
+      </Link>
 
       <style jsx>
         {`
@@ -1470,8 +1492,8 @@ function Header() {
             left: 91px;
             top: 1387px;
           }
-          .WHEELS{
-            display:flex;
+          .WHEELS {
+            display: flex;
           }
 
           .WHEELS1 {
@@ -1481,12 +1503,9 @@ function Header() {
             left: 0px;
             top: 1052px;
             overflow: hidden;
-            border-radius:47px;
+            border-radius: 47px;
             border-radius: 5rem 5rem 1 0;
-            border-radius: 0 -100% -100% 0/0 50% 50%
-
-            
-
+            border-radius: 0 -100% -100% 0/0 50% 50%;
           }
 
           .WHEELS2 {
@@ -1496,12 +1515,10 @@ function Header() {
             left: 294px;
             top: 1051px;
             overflow: hidden;
-            border-radius:47px;
+            border-radius: 47px;
             border-radius: 5rem 5rem 1 0;
-            border-radius: 0 -100% -100% 0/0 50% 50%
-
+            border-radius: 0 -100% -100% 0/0 50% 50%;
           }
-         
 
           .logoslinkedinicon1 {
             cursor: pointer;
@@ -1541,6 +1558,34 @@ function Header() {
             height: 21px;
             left: 192px;
             top: 2394px;
+          }
+          .whatsapp_float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            color: #fff;
+            text-align: center;
+            font-size: 30px;
+            z-index: 100;
+          }
+
+          /* for mobile */
+          @media screen and (max-width: 767px) {
+            .whatsapp-float {
+              margin-top: 10px;
+            }
+
+            .whatsapp_float {
+              width: 40px;
+              height: 450px;
+              bottom: 20px;
+              right: 300px;
+              font-size: 22px;
+              position: absolute;
+              left: 320px;
+            }
           }
         `}
       </style>
